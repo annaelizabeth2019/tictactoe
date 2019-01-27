@@ -31,8 +31,8 @@ h2 {
     width: 100%;
 }
 .board {
-    height: 618px;
-    width: 618px;
+    height: 612px;
+    width: 612px;
     background-color: #75656c;
 }
 .square {
@@ -43,5 +43,5 @@ h2 {
 }
 .square:hover {
     background-color: #a598ad;
-    color: ##b9aac2;
+    color: #b9aac2;
 }
