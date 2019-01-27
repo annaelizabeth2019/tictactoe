@@ -40,7 +40,8 @@ function handleMove() {
 
 function render() {
     board.forEach(function(val, idx) {
-        squares.textContent = board[idx];
+        //this moves the value of the board item into the squares[idx]
+        squares[idx].textContent = val;
     });
 };
 
