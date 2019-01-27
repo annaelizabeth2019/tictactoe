@@ -12,28 +12,21 @@
 //I need to render the board at the end of every turn
 
 
-function init(board) {}
-    let board = [
+function init() {}
+
+var render = function() {
+    
+}
+
+
+
+/*----- app's state (variables) -----*/ 
+
+let board = [
     '', '', '',
     '', '', '', 
     '', '', '' ];
 console.log(board);
-
-const squares = document.getElementsByClassName('#board div');
-document.getElementsByClassName('#board div').addEventListener('click, myFunction')
-function myFunction() {
-    document.getElementsByClassName('#board div').style.backgroundColor = "red"
-  }
-
-// let turn = (x || o) {
-//     x ? document.
-// }
-
-/*----- app's state (variables) -----*/ 
-// let turn, usedSquares, user, row, col;
-
-
-// var player = [playerOne, playerTwo];
 
 /*----- cached element references -----*/ 
 
