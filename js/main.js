@@ -20,7 +20,7 @@ let board;
 
 
 /*----- event listeners -----*/ 
-document.getElementById('board')addEventListener('click', handleMove)
+document.getElementById('board').addEventListener('click', handleMove)
 
 /*----- functions -----*/
     
@@ -30,12 +30,15 @@ function init() {
         '', '', '',
         '', '', '' 
     ];
-    render()
-}
+    render();
+};
+
 function handleMove() {
     console.log('handleMove is ready')
-}
+};
+
 function render() {
-    console.log('render is ready!')
-}
-init()
+    console.log('render is ready!');
+};
+
+init();
