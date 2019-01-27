@@ -6,28 +6,16 @@
 //4 I need the player turns to alternate from X to O
 //5 I need to track the position of x and o
 //6 I need to know when one of the players wins
-//I need to display a congrats message
+//I need to display a congrats message to the winner
 //I need to know when the board is full
-//I need to display a draw message
+//I need to display a draw message if the board is full
 //I need to render the board at the end of every turn
-
-
-function init() {}
-
-var render = function() {
-    
-}
-
-
 
 /*----- app's state (variables) -----*/ 
 
-let board = [
-    '', '', '',
-    '', '', '', 
-    '', '', '' ];
-console.log(board);
+let board;
 
+    
 /*----- cached element references -----*/ 
 
 
@@ -35,3 +23,5 @@ console.log(board);
 
 
 /*----- functions -----*/
+    
+function init() {}
