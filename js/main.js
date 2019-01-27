@@ -25,8 +25,9 @@ let board;
 /*----- functions -----*/
     
 function init() {
-    let board = [
+    board = [
         ‘’, ‘’, ‘’,
         ‘’, ‘’, ‘’,
-        ‘’, ‘’, ‘’ ];
+        ‘’, ‘’, ‘’ 
+    ];
 }
