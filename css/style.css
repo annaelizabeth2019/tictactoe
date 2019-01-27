@@ -1,14 +1,14 @@
 html,
 
 body {
-    background-color: gray;
-    color: white
+    background-image: url(https://png.pngtree.com/element_origin_min_pic/16/08/23/1057bbbafb40169.jpg);
+    color: black;
 }
 
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-weight: 10px;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 h2 {
@@ -45,7 +45,7 @@ h2 {
 }
 
 .square {
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 2px;
     height: 200px;
     width: 200px;

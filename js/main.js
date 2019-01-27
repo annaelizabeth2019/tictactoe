@@ -40,7 +40,7 @@ function handleMove() {
 
 function render() {
     board.forEach(function(val, idx) {
-        console.log(val, idx);
+        squares.textContent = board[idx];
     });
 };
 
