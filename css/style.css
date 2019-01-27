@@ -1,0 +1,47 @@
+html,
+body {
+    background-color: gray;
+    color: white
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 10px;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    /* center the board horizontally */
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
+}
+/* tells the board to drop down once it reaches max-width */
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.board-container {
+    height: 100%;
+    width: 100%;
+}
+.board {
+    height: 618px;
+    width: 618px;
+    background-color: #75656c;
+}
+.square {
+    border: 2px solid white;
+    border-radius: 2px;
+    height: 200px;
+    width: 200px;
+}
+.square:hover {
+    background-color: #a598ad;
+    color: ##b9aac2;
+}
