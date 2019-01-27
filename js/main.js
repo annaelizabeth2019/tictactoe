@@ -18,9 +18,10 @@ let board;
     
 /*----- cached element references -----*/ 
 
+const squares = document.querySelectorAll('#board div');
 
 /*----- event listeners -----*/ 
-document.getElementById('board').addEventListener('click', handleMove)
+document.getElementById('board').addEventListener('click', handleMove);
 
 /*----- functions -----*/
     
