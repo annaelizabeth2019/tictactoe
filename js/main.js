@@ -26,8 +26,13 @@ let board;
     
 function init() {
     board = [
-        ‘’, ‘’, ‘’,
-        ‘’, ‘’, ‘’,
-        ‘’, ‘’, ‘’ 
+        '', '', '', 
+        '', '', '',
+        '', '', '' 
     ];
 }
+function render() {
+    console.log('render is working!')
+}
+render()
+init()
