@@ -39,7 +39,10 @@ function handleMove() {
 };
 
 function render() {
-    console.log('render is ready!');
+    board.forEach(function(val, idx) {
+        console.log(val, idx);
+    });
 };
+
 
 init();
