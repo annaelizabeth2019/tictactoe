@@ -13,12 +13,11 @@
 
 /*----- app's state (variables) -----*/ 
 
-let board;
-
+let board, turn;
     
 /*----- cached element references -----*/ 
 
-const squares = document.querySelectorAll('#board div');
+const squares = Array.from(document.querySelectorAll('#board div'));
 
 /*----- event listeners -----*/ 
 document.getElementById('board').addEventListener('click', handleMove);
@@ -31,11 +30,17 @@ function init() {
         '', '', '',
         '', '', '' 
     ];
+    turn = 'X';
     render();
 };
 
-function handleMove() {
-    console.log('handleMove is ready')
+function handleMove(evt) {
+    let idx = squares.findIndex(function(square) {
+        return square === evt.target;
+    });
+    board[idx] = turn;
+    console.log(idx);
+    render();
 };
 
 function render() {
