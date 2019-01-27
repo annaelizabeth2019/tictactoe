@@ -34,5 +34,5 @@ function init() {
 function render() {
     console.log('render is working!')
 }
-render()
 init()
+render()
