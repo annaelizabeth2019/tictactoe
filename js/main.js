@@ -13,7 +13,8 @@
 
 /*----- app's state (variables) -----*/ 
 
-let board, turn;
+let board;
+let turn = 'X';
     
 /*----- cached element references -----*/ 
 
@@ -30,7 +31,8 @@ function init() {
         '', '', '',
         '', '', '' 
     ];
-    turn = 'X';
+    turn = 'X'
+    turn = turn === 'X' ? 'O' : 'X';
     render();
 };
 
