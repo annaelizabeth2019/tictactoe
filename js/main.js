@@ -13,11 +13,13 @@
 
 /*----- app's state (variables) -----*/ 
 
-let board turn;
+let board; 
+let turn = 'X';
     
 /*----- cached element references -----*/ 
 
 const squares = Array.from(document.querySelectorAll('#board div'));
+const messages = document.querySelector('h2');
 
 /*----- event listeners -----*/ 
 document.getElementById('board').addEventListener('click', handleMove);
@@ -30,8 +32,8 @@ function init() {
         '', '', '',
         '', '', '' 
     ];
-    turn = turn === 'X' ? 'O' : 'X';
     render();
+    
 };
 
 function handleMove(evt) {
@@ -39,7 +41,7 @@ function handleMove(evt) {
         return square === evt.target;
     });
     board[idx] = turn;
-    console.log(idx);
+    turn = (turn === 'X' ? 'O' : 'X');
     render();
 };
 
@@ -48,6 +50,7 @@ function render() {
         //this moves the value of the board item into the squares[idx]
         squares[idx].textContent = val;
     });
+    messages.textContent = `It's ${turn}'s turn!`;
 };
 
 
