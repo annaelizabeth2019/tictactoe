@@ -23,6 +23,7 @@ const messages = document.querySelector('h2');
 
 /*----- event listeners -----*/ 
 document.getElementById('board').addEventListener('click', handleMove);
+document.getElementById('reset-button').addEventListener('click', reset);
 
 /*----- functions -----*/
     
@@ -53,5 +54,13 @@ function render() {
     messages.textContent = `It's ${turn}'s turn!`;
 };
 
+function reset() {
+    board = [
+        '', '', '', 
+        '', '', '',
+        '', '', '' 
+    ];
+    render();
+}
 
 init();
